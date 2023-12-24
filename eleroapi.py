@@ -139,8 +139,8 @@ class EleroClient:
     def stop_discovery(self):
         self.api.stop_discovery()
 
-    def get_blind(self, blindId):
-        return self.api.get_blind(blindId=blindId)
+    def get_blind(self, blind_id):
+        return self.api.get_blind(blindId=blind_id)
 
 
 client = EleroClient("ha_user@local.dns", "ha_user")
@@ -150,4 +150,4 @@ print(f"Device id {client.device_id}")
 print(f"Blinds: {client.blinds}")
 first_blind = client.blinds[0]
 b_id0 = first_blind["blind_id"]
-print(f"Blind update {b_id0}: {client.get_blind(blindId=b_id0)}")
+print(f"Blind update {b_id0}: {client.get_blind(blind_id=b_id0)}")
