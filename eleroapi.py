@@ -1,7 +1,7 @@
-import socket
-import requests
-import logging
 import asyncio
+import logging
+import socket
+
 import aiohttp
 
 LOGGER = logging.getLogger(__name__)
