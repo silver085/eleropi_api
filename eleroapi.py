@@ -126,7 +126,7 @@ class EleroClient:
     blinds: None
 
     def __init__(self, username: str, password: str):
-        self.api = EleroAPI(username=username, password=password, isLocal=True)
+        self.api = EleroAPI(username=username, password=password, isLocal=False)
         self.device_id = self.api.device_id
         self.update()
 
